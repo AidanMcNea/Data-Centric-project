@@ -1,0 +1,28 @@
+<style>
+    table,th,td{
+        border:1px solid black;
+    }
+</style>
+
+<h1>Modules</h1>
+<form action="http://localhost:3004/EditModule">
+    <input type="submit" value="Edit Module" />
+<table>
+<tr>
+<th>Module Id</th>
+<th>Module Name</th>
+<th>Module Credits</th>
+
+</tr>
+ <% module.forEach((modules) =>
+{ %>
+<tr>
+<td><%= modules.mid %></td>
+<td><%= modules.name %></td>
+<td><%= modules.credits %></td>
+</tr>
+<% }) %>
+</table> 
+<form action="http://localhost:3004/">
+    <input type="submit" value="Home" />
+</form>

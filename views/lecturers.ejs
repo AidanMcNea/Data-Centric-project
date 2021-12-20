@@ -1,0 +1,33 @@
+<style>
+    table,th,td{
+        border:1px solid black;
+    }
+</style>
+<h1>Lecturers List</h1>
+
+<form action="http://localhost:3004/addLectureres">
+    <input type="submit" value="Add Lecturer" />
+</form>
+
+<table>
+<tr>
+<th>Lecturer Id</th>
+<th>Name</th>
+<th>Department</th>
+
+
+</tr>
+ <% lecturers.forEach((lecturers) =>
+{ %>
+<tr>
+<td><%= lecturers._id %></td>
+<td><%= lecturers.name %></td>
+<td><%= lecturers.dept %></td>
+
+</tr>
+<% }) %>
+</table> 
+
+<form action="http://localhost:3004/">
+    <input type="submit" value="Home" />
+</form>

@@ -1,0 +1,29 @@
+<style>
+    table,th,td{
+        border:1px solid black;
+    }
+</style>
+<h1>Student List</h1>
+<form action="http://localhost:3004/addStudent">
+    <input type="submit" value="Add Student" />
+</form>
+<table>
+<tr>
+<th>Student Id</th>
+<th>Student Name</th>
+<th>Student GPA</th>
+
+</tr>
+ <% student.forEach((students) =>
+{ %>
+<tr>
+<td><%= students.sid %></td>
+<td><%= students.name %></td>
+<td><%= students.gpa %></td>
+</tr>
+<% }) %>
+</table> 
+<h3>To Delete a student type http://localhost:3004/Student/delete/:sid' into the url bar where :sid is the id number of the student you want to delete</h3>
+<form action="http://localhost:3004/">
+    <input type="submit" value="Home" />
+</form>

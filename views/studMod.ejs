@@ -1,0 +1,25 @@
+<style>
+    table,th,td{
+        border:1px solid black;
+    }
+</style>
+<h1>Student Modules</h1>
+<table>
+<tr>
+<th>Student Id</th>
+<th>Module Id</th>
+
+
+</tr>
+ <% studMod.forEach((studMod) =>
+{ %>
+<tr>
+<td><%= studMod.sid %></td>
+<td><%= studMod.mid %></td>
+
+</tr>
+<% }) %>
+</table> 
+<form action="http://localhost:3004/">
+    <input type="submit" value="Home" />
+</form>

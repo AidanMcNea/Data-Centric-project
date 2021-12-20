@@ -1,0 +1,25 @@
+<style>
+    table,th,td{
+        border:1px solid black;
+    }
+</style>
+<h1>Department List</h1>
+<table>
+<tr>
+<th>Department Id</th>
+<th>Department Name</th>
+
+
+</tr>
+ <% dept.forEach((dept) =>
+{ %>
+<tr>
+<td><%= dept.did %></td>
+<td><%= dept.name %></td>
+
+</tr>
+<% }) %>
+</table> 
+<form action="http://localhost:3004/">
+    <input type="submit" value="Home" />
+</form>
